@@ -12,7 +12,7 @@ USER jackkke:zion
 
 WORKDIR /app
 
-# 直接使用打包好的jar来启动
+# 使用分离之后的class文件以及lib来启动
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
