@@ -1,0 +1,17 @@
+# maven 打包命令
+mvn package
+
+# 分解jar命令(windows powershell)
+mkdir -p target/dependency;cd target/dependency;jar -xf ../spring-boot-example-docker02-2.6.3.jar
+
+> 会出现三个目录
+* target/dependency/BOOT-INF
+* target/dependency/META-INF
+* target/dependency/org
+
+# 构建镜像命令
+docker build -t jackkke/spring-boot-example-docker02:2.6.3 .
+
+# dockerdesktop 启动镜像，开放端口设置为9716
+
+# 浏览器访问http://localhost:9716, 返回 "hello! I'm from spring-boot-example-docker02"
