@@ -1,0 +1,5 @@
+server:
+  port: 9716
+spring:
+  application:
+    name: spring-boot-example-docker05
