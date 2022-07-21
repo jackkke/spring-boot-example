@@ -43,6 +43,19 @@
                         <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
                     </container>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
+                    <!--<dependencies>
+                        <dependency>
+                            <groupId>com.google.cloud.tools</groupId>
+                            <artifactId>jib-layer-filter-extension-maven</artifactId>
+                            <version>0.3.0</version>
+                        </dependency>
+                    </dependencies>-->
+                    <!--<pluginExtensions>
+                        &lt;!&ndash; 2. specify extension implementation classes to load &ndash;&gt;
+                        <pluginExtension>
+                            <implementation>com.google.cloud.tools.jib.maven.extension.layerfilter.JibLayerFilterExtension</implementation>
+                        </pluginExtension>
+                    </pluginExtensions>-->
                 </configuration>
             </plugin>
         </plugins>
