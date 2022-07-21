@@ -1,0 +1,6 @@
+# maven 打包命令直接构建镜像 jackkke/spring-boot-example-docker04:2.6.3
+mvn package
+
+# dockerdesktop 启动镜像，开放端口设置为9716
+
+# 浏览器访问http://localhost:9716, 返回 "hello! I'm from spring-boot-example-docker04"

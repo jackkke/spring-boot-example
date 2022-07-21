@@ -15,6 +15,8 @@
         <module>spring-boot-example-docker01</module>
         <module>spring-boot-example-docker02</module>
         <module>spring-boot-example-docker03</module>
+        <module>spring-boot-example-docker04</module>
+        <module>spring-boot-example-docker05</module>
     </modules>
 
     <dependencies>
