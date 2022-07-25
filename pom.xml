@@ -5,6 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-example-docker</module>
+        <module>spring-boot-example-encrypt</module>
+        <module>spring-boot-example-redis</module>
     </modules>
     <parent>
         <groupId>top.jackkke</groupId>
