@@ -15,15 +15,15 @@ import java.time.LocalDateTime;
 @CacheConfig(cacheNames = "jackkke")
 public class CacheController {
 
-    @GetMapping("day")
-    @Cacheable(value = "day#3", key = "#id")
-    public String day(@RequestParam(value = "id") String id) {
-        return id + "-" + LocalDateTime.now();
-    }
+  @GetMapping("day")
+  @Cacheable(value = "day#3", key = "#id")
+  public String day(@RequestParam(value = "id") String id) {
+    return id + "-" + LocalDateTime.now();
+  }
 
-    @GetMapping("hour")
-    @Cacheable(value = "hour!3", key = "#id")
-    public String hour(@RequestParam(value = "id") String id) {
-        return id + "-" + LocalDateTime.now();
-    }
+  @GetMapping("hour")
+  @Cacheable(value = "hour!3", key = "#id")
+  public String hour(@RequestParam(value = "id") String id) {
+    return id + "-" + LocalDateTime.now();
+  }
 }

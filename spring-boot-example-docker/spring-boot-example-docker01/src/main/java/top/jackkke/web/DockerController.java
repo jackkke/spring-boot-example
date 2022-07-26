@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DockerController {
 
-    @Value("${spring.application.name}")
-    private String name;
+  @Value("${spring.application.name}")
+  private String name;
 
-    @GetMapping(value = "hello")
-    public Object sayHello(){
-        return "hello! I'm from " + name;
-    }
+  @GetMapping(value = "hello")
+  public Object sayHello() {
+    return "hello! I'm from " + name;
+  }
 }

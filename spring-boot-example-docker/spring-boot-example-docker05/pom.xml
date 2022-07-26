@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>spring-boot-example-docker</artifactId>
-        <groupId>top.jackkke</groupId>
-        <version>2.6.3</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-boot-example-docker05</artifactId>
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>spring-boot-example-docker</artifactId>
+    <groupId>top.jackkke</groupId>
+    <version>2.6.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>spring-boot-example-docker05</artifactId>
 
-    <!--<build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                &lt;!&ndash;https://www.cnblogs.com/flydean/p/13824496.html 自定义layer 参考 &ndash;&gt;
-                &lt;!&ndash;如果发现jar分离后没有 target/extracted/application/BOOT-INF/layers.idx 这个文件，可以增加以下配置&ndash;&gt;
-                &lt;!&ndash;<configuration>
-                    <layers>
-                        <enabled>true</enabled>
-                    </layers>
-                </configuration>&ndash;&gt;
-            </plugin>
-        </plugins>
-    </build>-->
+  <!--<build>
+      <plugins>
+          <plugin>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-maven-plugin</artifactId>
+              &lt;!&ndash;https://www.cnblogs.com/flydean/p/13824496.html 自定义layer 参考 &ndash;&gt;
+              &lt;!&ndash;如果发现jar分离后没有 target/extracted/application/BOOT-INF/layers.idx 这个文件，可以增加以下配置&ndash;&gt;
+              &lt;!&ndash;<configuration>
+                  <layers>
+                      <enabled>true</enabled>
+                  </layers>
+              </configuration>&ndash;&gt;
+          </plugin>
+      </plugins>
+  </build>-->
 </project>

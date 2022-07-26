@@ -12,12 +12,12 @@ import top.jackkke.redis.util.RedisService;
 @RequiredArgsConstructor
 public class TestController {
 
-    private final RedisService redisService;
+  private final RedisService redisService;
 
-    @GetMapping("hello")
-    public String hello() {
-        String test = redisService.get("test", String.class);
-        System.out.println("test = " + test);
-        return test;
-    }
+  @GetMapping("hello")
+  public String hello() {
+    String test = redisService.get("test", String.class);
+    System.out.println("test = " + test);
+    return test;
+  }
 }
