@@ -8,4 +8,3 @@ jasypt:
     algorithm: PBEWithHMACSHA512AndAES_256
 encode:
   msg: ENC(JNuYlUXofUCnuFWbyBhe6XaLfCja1ScLzhLkBZhauDblrOBwGrOhjaqMOal6nR8Q68zTmfvqWUcVQoCo79HwBgSQ3rdAmEoNoKrgJqPHAiEuds56/M+fp0k2f+b+mJGo)
-date: 'P2D'
