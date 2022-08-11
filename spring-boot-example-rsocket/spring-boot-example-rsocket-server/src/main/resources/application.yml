@@ -1,0 +1,63 @@
+server:
+  port: 9716
+
+spring:
+  main:
+    lazy-initialization: true
+    allow-bean-definition-overriding: true
+  rsocket:
+    server:
+      # 端口开放 建连接 实施难度
+      port: 19712
+      transport: TCP
+      fragmentSize: 1MB
+      ssl:
+        enabled: true
+        # clientAuth: NEED
+        protocol: TLS1.3
+        key-store: classpath:rsocket.p12
+        key-store-password: rsocketStore
+        keyAlias: rsocket
+        keyStoreType: PKCS12
+  redis:
+    # 数据库（默认为0号库）
+    database: 1
+    # 密码（默认空），操作redis需要使用的密码
+    password: test
+    # 端口号
+    #    port: 6379
+    #连接超时时间（毫秒）
+    timeout: 10000ms
+    sentinel:
+      master: mymaster
+      nodes:
+        - 127.0.0.1:26379
+        - 127.0.0.1:26380
+        - 127.0.0.1:26381
+      # 操作sentinel时需要提供的密码
+      password: sentinel
+    # 使用lettuce配置
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 200
+        # 连接池中的最大空闲连接
+        max-idle: 20
+        # 连接池中的最小空闲连接
+        min-idle: 5
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+logging:
+  level:
+    root: ERROR
+    io.rsocket: WARN
+    reactor.util: WARN
+    top.jackkke.rsocket: DEBUG
+    org.springframework.core.log.LogFormatUtils: WARN
+
+redisson:
+  masterName: mymaster
+  sentinelAddresses:
+    - 127.0.0.1:26379
+    - 127.0.0.1:26380
+    - 127.0.0.1:26381

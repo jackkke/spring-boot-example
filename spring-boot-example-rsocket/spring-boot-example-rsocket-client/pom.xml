@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>spring-boot-example-rsocket</artifactId>
+    <groupId>top.jackkke</groupId>
+    <version>2.6.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>spring-boot-example-rsocket-client</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.shell</groupId>
+      <artifactId>spring-shell-starter</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>top.jackkke</groupId>
+      <artifactId>spring-boot-example-rsocket-common</artifactId>
+      <version>2.6.3</version>
+    </dependency>
+    <dependency>
+      <groupId>top.jackkke</groupId>
+      <artifactId>jackkke-starter-common-redis</artifactId>
+      <version>2.6.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-rsocket</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+  </dependencies>
+</project>

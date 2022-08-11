@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>spring-boot-example-rsocket</artifactId>
+    <groupId>top.jackkke</groupId>
+    <version>2.6.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>spring-boot-example-rsocket-server</artifactId>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>top.jackkke</groupId>
+      <artifactId>spring-boot-example-rsocket-common</artifactId>
+      <version>2.6.3</version>
+    </dependency>
+    <dependency>
+      <groupId>top.jackkke</groupId>
+      <artifactId>jackkke-starter-common-redis</artifactId>
+      <version>2.6.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-rsocket</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-messaging</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+<!--      <type>bundle</type>-->
+    </dependency>
+  </dependencies>
+</project>
